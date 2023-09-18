@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-right: 100px;
+            padding: 50px;
+        }
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image:url(https://images-cdn.welcomesoftware.com/Zz0zZTliMjQ4MzhlNGExMWViYmJiMjFiZTI2ZWNmN2MzZA==)
+        }
+      
+        input[type=text]
+        {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #e6bfbf;
+        }
+        button[type=submit]{
+            width: 103%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: rgb(185, 142, 142);
+            cursor: pointer;
+            
+        }
+        .submittedData{
+            text-align: center;
+        }
+
+    </style>
+    
+</head>
+<body>
+    
+    
+        <h1 style="text-align: center; color: purple;"> STORE</h1>
+        <form class="container" id="my-form" style="margin-left: 210px;">
+           
+            <label for="item">Item Name</label>
+            <input type="text" id="item" autocomplete="off" name="item">
+
+            <label for="description">Description</label>
+            <input type="text" id="description" autocomplete="off" name="description">
+
+            <label for="price">Price</label>
+            <input type="text" id="price" autocomplete="off" name="price">
+
+            <label for="quantity">Quantity</label>
+            <input type="text" id="quantity" autocomplete="off" name="quantity">
+
+            <button type="submit" id="btn">Add Item</button>
+        </form>
+    <div class="submittedData"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="main.js"></script>
+
+    </script>
+</body>
+</html>
